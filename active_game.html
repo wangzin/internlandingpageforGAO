@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Dashboard</title>
+<link rel="stylesheet" href="game_style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="profile">
+      <img src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=1024x1024&w=is&k=20&c=-mUWsTSENkugJ3qs5covpaj-bhYpxXY-v9RDpzsw504=" class="avatar">
+      <h3>Simo Edwin</h3>
+      <p class="member">Pro Member</p>
+    </div>
+
+    <ul class="menu">
+      <li class="active">🎮 Streams</li>
+      <li>🕹 Games</li>
+      <li>✨ New</li>
+      <li>📚 Library</li>
+    </ul>
+
+    <div class="promo">
+	  <div class="promo-text">
+		<h4>Join pro</h4>
+		<p>for free games.</p>
+	  </div>
+
+	  <div class="promo-img">
+		<img src="https://cdn-icons-png.flaticon.com/512/3612/3612569.png" alt="controller">
+	  </div>
+	</div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+    <h2>Active Games</h2>
+
+    <div class="card">
+      <img src="https://img.redbull.com/images/c_crop,x_626,y_0,h_890,w_668/c_fill,w_450,h_600/q_auto,f_auto/redbullcom/2020/5/20/rcdvovsb4wp45sslrite/assassins-creed-valhalla-screenshot">
+      <div class="info">
+        <h4>Assassins Creed Valhalla</h4>
+        <small>PS5 Version</small>
+
+        <div class="progress">
+          <div class="bar" data-value="60"></div>
+        </div>
+      </div>
+      <span class="percent">60%</span>
+    </div>
+
+    <div class="card">
+      <img src="https://img.redbull.com/images/c_crop,x_626,y_0,h_890,w_668/c_fill,w_450,h_600/q_auto,f_auto/redbullcom/2020/5/20/rcdvovsb4wp45sslrite/assassins-creed-valhalla-screenshot">
+      <div class="info">
+        <h4>Assassins Creed Valhalla</h4>
+        <small>PS5 Version</small>
+
+        <div class="progress">
+          <div class="bar" data-value="60"></div>
+        </div>
+      </div>
+      <span class="percent">60%</span>
+    </div>
+
+    <div class="card">
+      <img src="https://img.redbull.com/images/c_crop,x_626,y_0,h_890,w_668/c_fill,w_450,h_600/q_auto,f_auto/redbullcom/2020/5/20/rcdvovsb4wp45sslrite/assassins-creed-valhalla-screenshot">
+      <div class="info">
+        <h4>Assassins Creed Valhalla</h4>
+        <small>PS5 Version</small>
+
+        <div class="progress">
+          <div class="bar" data-value="60"></div>
+        </div>
+      </div>
+      <span class="percent">60%</span>
+    </div>
+
+  </div>
+</div>
+
+<script>
+window.onload = () => {
+  document.querySelectorAll('.bar').forEach(bar => {
+    const value = bar.getAttribute('data-value');
+    bar.style.width = value + "%";
+  });
+};
+
+</script>
+</body>
+</html>
