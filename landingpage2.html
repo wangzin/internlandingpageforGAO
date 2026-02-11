@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet">
+    <style>
+	* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  #title{
+    color: #14bf98;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 4.5rem;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+  }
+  
+  .logo {
+    width: 132px;
+    height: 32px;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav ul a {
+    padding: 0.5rem 0.5rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 0.125rem;
+    color: #fff;
+    transition: all 300ms;
+  }
+  nav ul a:hover{
+    color: #14bf98;
+  }
+  
+  nav .icons {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    position: relative;
+  }
+  
+  nav .icons span {
+    background-image: url(assets/hexagon-green.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1.625rem;
+    width: 1.625rem;
+    display: block;
+    background-size: 1.625rem;
+  }
+  
+  nav .icons i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #hero {
+    padding-top: 14.75rem;
+    padding-bottom: 17.5rem;
+    background-image: url(http://harshal0151.github.io/Aria_ui/assets/header-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+  }
+  
+  .text {
+    text-align: center;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6.5rem;
+    padding-bottom: 3rem;
+    position: relative;
+  }
+  
+  .text h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  
+  .text p {
+    margin-bottom: 2rem;
+    color: #dfe5ec;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 18px;
+  }
+  
+  .text a {
+    padding: 1rem 2.55rem;
+    background-color: #14bf98;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+  
+  }
+  .text  a:hover{
+    color: #14bf98;
+    background: transparent;
+    border: 1px solid  #14bf98;
+  }
+  
+  #overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.4;
+  }
+
+    /* intro section */
+
+  #intro {
+    margin: 7rem 0px;
+    padding: 0px 5%;
+  }
+  
+  #intro .container {
+    padding: 0px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+  }
+  
+  .first {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  #intro .section-title {
+    font-weight: 800;
+    color: #14bf98;
+    font:1rem "Montserrat", sans-serif;
+  }
+  
+  .basic-1 h2 {
+    margin-bottom: 1.3rem;
+    color: #484a46;
+    font: 700 1.81rem / 2.12rem "Montserrat", sans-serif;
+  }
+  
+  #intro p,
+  #cards p {
+    color: #484a46;
+    font: 400 1rem / 1.5rem "Montserrat", sans-serif;
+    margin-bottom: 1rem;
+  }
+  
+  #intro .testimonial-text {
+    font-style: italic;
+  }
+  
+  #intro .testimonial-author {
+    color: #484a46;
+    font: 700 1rem/ 1.37rem "Montserrat", sans-serif;
+  }
+  
+  .second {
+    text-align: center;
+    overflow: hidden;
+    
+  }
+  
+  .second img {
+    width: 85%;
+    transition:  all 0.5s ease-in-out;
+    
+  }
+  .second img:hover{
+     width: 85%;
+    transform: scale(1.2); 
+  }
+
+  
+  
+  #cards h2 {
+    color: #484a46;
+    font: 700 1.2rem / 2.12rem "Montserrat", sans-serif;
+  }
+  
+  #cards .container {
+    padding: 0px 12%;
+  
+    display: grid;
+    /* justify-content: space-between; */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 1rem;
+  }
+  
+  #cards .card img {
+    width: 120px;
+    height: 100px;
+  }
+  
+  #cards .card {
+    padding: 0.5rem;
+  }
+
+  .card p{
+    width: 80%;
+    margin-top: 0.5rem;
+  }
+
+  /* service section */
+
+  #Services{
+    width: 100%;
+    margin: 7rem 0px;
+    padding: 0px 5%;
+    background-color: #fbfbfb;
+    
+ 
+  }
+
+  .service_head{
+     padding: 2rem;
+     text-align: center;
+  }
+  .service_head p{
+      margin-bottom: 1rem;
+  }
+
+  .service_head h2{
+    font-weight: 700;
+    font-size: 28px;
+    color: #484a46;
+    padding: 0;
+   
+  }
+
+  .services_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 0px 2.5rem ;
+  }
+
+  .service_card img{
+    width: 100%;
+  }
+
+  .service_card{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin: 2rem;
+   border-radius: 8px;
+   padding-bottom: 2.5rem;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  }
+
+  .card_con{
+    padding: 0.5rem;
+    position: relative;
+  }
+
+  .btn_con{
+    text-align: center;
+    position: relative;
+  }
+
+  .card_con h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 22px;
+    color: #484a46;
+    text-align: center;
+    margin: 1rem;
+
+  }
+
+  .card_con p{
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #787976;
+    font-size: 1rem;
+   margin: 1rem 1rem 1rem 0;
+   
+  }
+  .card_con ul {
+    
+    list-style: square;
+    color: #14bf98;
+    margin: 0 0 0 32px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+  }
+  .card_con ul li p{
+    text-align: start;
+  }
+
+  .btn_con span{
+    color: #14bf98;
+    font-weight: 600;
+  }
+
+  
+
+
+  .btn_con button{
+    padding: 1rem 2.55rem;
+    background-color: #14bf98;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+  transform: translate(-50% -50%);
+  top: 160%;
+  left: 30%;
+   transition: all ease-in-out 300ms;
+    
+  }
+
+  .btn_con button:hover{
+    color: #14bf98;
+    background-color:#fff;
+    border: 1px solid  #14bf98;
+  }
+
+
+  /* #flex-1   */
+
+  #flex-1{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  #flex-1 .left{
+    width: 63.5%;
+    height: 518px;
+  }
+  .left img{
+    width: 100%;
+    height: 100%;
+  }
+
+  #flex-1 .right{
+    
+    width: 50%;
+   margin: 5rem;
+  }
+  
+  #flex-1 .right h3, h2{
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #484a46;
+    padding: 1rem;
+    transition: all 300ms;
+  }
+
+  #flex-1 .right  h2{
+    font-size: 2rem;
+    padding:  2rem 0;
+  } 
+  #flex-1 .right  h3:hover{
+    color: #14bf98;
+  }
+  .right ol li {
+    list-style: none;
+    margin-left: 2rem;
+    counter-increment: my-awesome-counter;
+    position: relative;
+  }
+  ol li::before {
+    content: counter(my-awesome-counter);
+    color: #787976;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    --size: 32px;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0.5rem; 
+    border-radius: 50%;
+    text-align: center;
+    border: 3px solid #787976;
+  
+  }
+
+
+  ol li p {
+    text-align: start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #787976;
+    font-size: 1rem;
+   margin-bottom: 1rem;
+   
+  }
+
+
+  /* testimonials */
+
+  #testimonials {
+    padding: 6.25rem 4.5rem;
+  }
+  
+  #testimonials .section-heading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+        align-items: center;
+        margin-bottom: 5rem;
+  }
+  
+  #testimonials .section-heading h2 {
+   font-size: 2rem;
+    color: #484a46;
+    margin-bottom: 1rem;
+  }
+  
+  #testimonials .section-heading p {
+    display: flex;
+    justify-content: center;
+      width: 50%;
+    color: #787976;
+    line-height: 1.5;
+  }
+  
+  #testimonials .section-wrapper {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display: grid;
+    grid-auto-columns: 33%;
+    grid-auto-flow: column;
+  }
+  
+  #testimonials .section-wrapper::-webkit-scrollbar {
+    height: 8px;
+    background-color: #aaa;
+    border-radius: 5px;
+  }
+  
+  #testimonials .section-wrapper::-webkit-scrollbar-thumb {
+    background-color: #14bf98;
+    border-radius: 5px;
+  }
+  
+  #testimonials .testimonial {
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    text-align: center;
+  }
+  
+  #testimonials .testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  #testimonials .testimonial p {
+    color: #787976;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    font-style: i;
+  }
+  
+  #testimonials .testimonial h4 {
+    color: #484a46;
+  }
+
+
+  /* callme */
+
+  #callme{
+    width: 100%;
+    display: flex;
+    background-color: #153e52;
+    justify-content: space-around;
+    align-items: center;
+    color: #dfe5ec;
+    padding: 0 8rem;
+    
+  }
+
+  #callme .left_callme{
+    width: 50%;
+    padding: 3rem;
+    margin: 1rem;
+  }
+
+  #callme .left_callme h2{
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 700;
+
+  }
+  #callme .left_callme p ,ul{
+    font-size: 1rem;
+    color: #dfe5ec;
+   padding: 1rem;
+    
+  }
+
+  #callme .left_callme ul{
+      list-style: square;
+      color: #14bf98;
+  }
+
+  
+#callme .right_callme .form-group {
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+
+#callme .right_callme .form-group label {
+  position: absolute;
+  left: 1.375rem;
+  top: 0.8125rem;
+  color: white;
+  font-size: 0.87rem;
+  transition: all 300ms;
+}
+
+#callme .right_callme input[type="text"],
+select {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.3125rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  border: 1px solid #39728f;
+  background-color: #2a5d77;
+  color: #fff;
+}
+
+#contact .right_callme input[type="text"] {
+  height: 3rem;
+}
+
+#contact input {
+  outline: white;
+}
+
+#callme #callme-checkbox {
+  color: #dfe5ec;
+  font: 400 0.9rem / 1.5rem "Montserrat", sans-serif;
+}
+
+#callme a {
+  color: #dfe5ec;
+  text-decoration: underline;
+}
+
+#callme button {
+  padding: 0.9rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  border: 1px solid #39728f;
+  background-color: #14bf98;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: ease-in-out 300ms;
+}
+
+#callme button:hover {
+  background: transparent;
+  cursor: pointer;
+  border: 2px solid #14bf98;
+}
+
+
+/* project section */
+
+#projects{
+  width: 100%;
+  padding: 6rem;
+}
+#projects .project_head{
+  width: 100%;
+  text-align: center;
+}
+
+#projects .project_head h2{
+   font-size: 2rem;
+   color: #484a46;
+   font-weight: 700;
+}
+
+#projects .project_menu{
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+#projects .project_menu ul{
+  display: flex;
+  color: #484a46;
+  gap: 2.5rem;
+
+}
+
+#projects .project_menu ul li a{
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #7b7e85;
+  background-color: #f1f4f7;
+  border: none;
+  padding: 0.3rem  2rem;
+  border-radius: 8px;
+  transition: all 300ms;
+
+}
+#projects .project_menu ul li :hover{
+  color: #ffffff ;
+  background-color:#14bf98
+}
+
+.menu1{
+  color: #ffffff !important;
+  background-color:#14bf98 !important;
+}
+#projects .project_img{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 0 5rem;
+  margin-top: 3rem;
+
+}
+
+
+#projects .project {
+ 
+  position: relative;
+  overflow: hidden;
+}
+
+
+#projects .project img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: all 300ms;
+}
+
+#projects .project p {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  opacity: 0;
+  transition: all 300ms;
+}
+
+#projects .project:hover img {
+  transform: scale(1.2);
+}
+
+#projects .project:hover p {
+  opacity: 1;
+}
+
+/* about section */
+
+#about{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #dfe5ec;
+  padding: 0 10rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  
+}
+
+#about .left_about{
+  width: 60%;
+  padding: 3rem;
+  margin: 1rem;
+}
+
+#about .left_about h2{
+  font-size: 2rem;
+  color: #484a46;
+  font-weight: 700;
+
+}
+#about .left_about p ,ul{
+  font-size: 1rem;
+  color: #787976;
+ padding: 1rem;
+  
+}
+
+#about .left_about ul{
+    list-style: square;
+    color: #14bf98;
+}
+
+#about .right_about img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+
+
+
+/* contact */
+
+
+#contact {
+  background-color: #fbfbfb;
+  padding: 6.25rem 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#contact .left {
+  text-align: start;
+  width: 48%;
+  padding: 0 3rem;
+}
+
+#contact .section-heading h2 {
+  font-size:  2rem;
+  margin-bottom: 1rem;
+  margin-left: -15px;
+}
+
+#contact .coffee,
+#contact .info,
+#contact .info a {
+  color: #787976;
+  margin-bottom: 1.25rem;
+}
+
+#contact .info a {
+  padding-left: 0.15rem;
+  padding-right: 0.15rem;
+  text-decoration: underline;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+#contact .info i {
+  color: #14bf98;
+  margin-left: 0.5rem;
+}
+
+#contact .info p {
+  margin-bottom: 0.8rem;
+}
+
+#contact h3 {
+  color: #484a46;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+#contact .icons a {
+  position: relative;
+  display: inline-block;
+  width: 3.25rem;
+  height: 3.25rem;
+  margin-left: 0.15rem;
+  margin-right: 0.15rem;
+}
+
+#contact .icons a span {
+  position: absolute;
+  background-image: url(assets/hexagon-green.svg);
+  background-position: center;
+  display: block;
+  width: 3.25rem;
+  height: 3.25rem;
+  background-size: 3.25rem;
+  background-repeat: no-repeat;
+  transition: all 300ms;
+}
+
+#contact .icons a i {
+  position: absolute;
+  color: #fff;
+  font-size: 1.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 300ms;
+}
+
+#contact .icons a:hover i {
+  color: #14bf98;
+}
+
+#contact .icons a:hover span {
+  background-image: none;
+  background-color: #fff;
+}
+
+#contact .right {
+  width: 48%;
+}
+
+#contact .right input[type="text"],
+#contact .right textarea {
+  padding-top: 1.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1.3125rem;
+  border: 1px solid #dadada;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  color: #787976;
+  width: 100%;
+}
+
+#contact .right input[type="text"] {
+  height: 3rem;
+}
+
+#contact .right textarea {
+  height: 8rem;
+}
+
+#contact .right .form-group {
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+
+#contact .right .form-group label {
+  position: absolute;
+  left: 1.375rem;
+  top: 0.8125rem;
+  color: #787976;
+  font-size: 0.87rem;
+  transition: all 300ms;
+}
+
+#contact .right input[type="text"]:focus+label,
+#contact .right textarea:focus+label {
+  font-size: 0.7rem;
+  top: 0.5rem;
+}
+
+#contact .right .agree,
+#contact .right .agree a {
+  font-size: 0.875rem;
+  color: #787976;
+}
+
+#contact .right .agree a {
+  text-decoration: underline;
+}
+
+#contact .right button {
+  width: 100%;
+  background-color: #14bf98;
+  color: #fff;
+  border: 2px solid #14bf98;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+#contact .right button:hover {
+  background-color: #fff;
+  color: #14bf98;
+}
+
+
+
+
+/* Footer  section*/
+
+footer {
+  background-color: #113448;
+  padding-top: 5rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  font-size: 14px;
+}
+
+footer,
+footer a {
+  color: #fff;
+}
+
+footer .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .top h2 {
+  color: #ffffff;
+  
+}
+footer .top .left h2{
+  font-size: 1.8rem;
+  margin-left: -15px;
+}
+
+footer .top .left {
+  width: 40%;
+}
+
+footer .top .left p {
+  line-height: 1.5;
+}
+
+footer .top .right {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+footer .top .right a {
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+
+footer .bottom {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+	</style>
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+            <a href="">
+                <img src="assets/logo.svg" class="logo" alt="Logo">
+            </a>
+            <ul>
+                <li>
+                    <a href="#hero">Home</a>
+                </li>
+                <li>
+                    <a href="#intro">Intro</a>
+                </li>
+                <li>
+                    <a href="#Services">Services</a>
+                </li>
+                <li>
+                    <a href="#callme">Call Me</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#about">
+                        About
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="" class="icons">
+                        <span></span>
+                        <i class="fa-brands fa-facebook-f">
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="icons">
+                        <span></span>
+                        <i class="fa-brands fa-twitter">
+                        </i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="hero">
+                <div id="overlay"></div>
+                <div class="text">
+                    <h1>Business Template</h1>
+                    <p>
+                        Aria is a top consultancy company specializing in business growth
+          using online marketing and conversion optimization tactics
+                    </p>
+                    <a href="">Discover</a>
+                </div>
+            </section>
+
+            <section id="intro" class="basic-1">
+                <div class="container">
+                    <div class="first">
+                        <div>
+                            <span id="title">INTRO</span>
+                            <h2>We Offer Some Of The Best Business Growth Services In Town</h2>
+                            <p> Launching a new company or developing the market position of an existing one can be quite an overwhelming processs at times.</p>
+                            <p class="testimonial-text">"Our mission here at Aira is to get you through those tough moments relying on our team's expertise in starting and growing companies."</p>
+                            <h3 class="testimonial-author">Louise Donovan - CEO</h3>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <img src="./assets/intro-office.jpg">
+                    </div>
+                </div>
+            </section>
+
+            <section id="cards">
+                <div class="container">
+                    <div class="card">
+                        <img src="data:image/jpeg;base64,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">
+                        <h2>
+                            Environment Analysis
+                        </h2>
+                        <p>The starting point of any success story is knowing your current position in the business environment</p>
+                    </div>
+                    <div class="card">
+                        <img src="data:image/png;base64,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">
+                        <h2>
+                            Development Planning
+                        </h2>
+                        <p>After completing the environmental analysis the next stage is to design and plan your development strategy</p>
+                    </div>
+                    <div class="card">
+                        <img src="data:image/png;base64,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">
+                        <h2>
+                            Execution &amp; Evaluation
+                        </h2>
+                        <p>In this phase you will focus on executing the actions plan and evaluating the results after each marketing campaign</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Services">
+                <div class="service_head">
+                    <p id="title">SERVICES</p>
+                    <h2>Choose The Service Package</h2>
+                       <h2> That Suits Your Needs</h2>
+                </div>
+               <div class="services_content"> 
+                 <div class="service_card">
+                    
+                        <img src="./assets/services-1.jpg" alt="">
+                 
+                     <div class="card_con">
+                        <h3>Off The Ground Off The Ground</h3>
+                        <p>Use this service pack to give your company the necessary impulse to become an industry leader
+
+                        </p>
+                        <ul>
+                            <li>
+                                <p>Environment and competition</p>
+                            </li>
+                            <li>
+                               <p> Designing the marketing plan</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn_con">
+                        <h3>Starting at <span>$299</span></h3>
+                        <button>DETAILS</button>
+                    </div>
+                 </div>
+
+                 <div class="service_card">
+                    <div>
+                        <img src="./assets/services-2.jpg" alt="">
+                    </div>
+                    <div class="card_con">
+                        <h3>Off The Ground Off The Ground</h3>
+                        <p>Perfect for fresh ideas or young startups, this package will help get the business off the ground</p>
+                        <ul>
+                            <li>
+                                <p>Environment and competition</p>
+                            </li>
+                            <li>
+                               <p> Designing the marketing plan</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn_con">
+                        <h3>Starting at <span>$299</span></h3>
+                        <button>DETAILS</button>
+                    </div>
+                 </div>
+
+                 <div class="service_card">
+                    <div>
+                        <img src="./assets/services-3.jpg" alt="">
+                    </div>
+                    <div class="card_con">
+                        <h3>Off The Ground Off The Ground</h3>
+                        <p>Perfect for fresh ideas or young startups, this package will help get the business off the ground</p>
+                        <ul>
+                            <li>
+                                <p>Environment and competition</p>
+                            </li>
+                            <li>
+                               <p> Designing the marketing plan</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn_con">
+                        <h3>Starting at <span>$299</span></h3>
+                            <button>DETAILS</button>
+                         </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="flex-1">
+            
+                <div class="left">
+                    <img src="./assets/details-1-background.jpg" alt="">
+                </div>
+                <div class="right">
+                   <div class="right_con">
+                    <h2>Accelerate Business Growth To Improve Revenue Numbers</h2>
+                    <ol>
+                        <li id="title1"><h3>How Can Aria Help Your Business</h3>
+                            <p>At Aria solutions, we’ve taken the consultancy concept one step further by offering a full service management organization with expertise.</p>
+                        </li>
+                        <li><h3>Great Strategic Business Planning</h3></li>
+                        <li><h3>Online Marketing Campaigns</h3></li>
+                    </ol>
+                   </div>
+
+                </div>
+              
+            </section>
+
+            <section id="flex-1">
+                <div class="right">
+                    <div class="right_con">
+                        <h2>Accelerate Business Growth To Improve Revenue Numbers</h2>
+                        <ol>
+                            <li class="title1"><h3>How Can Aria Help Your Business</h3>
+                                <p>At Aria solutions, we’ve taken the consultancy concept one step further by offering a full service management organization with expertise.</p>
+                            </li>
+                            <li><h3>Great Strategic Business Planning</h3></li>
+                            <li><h3>Online Marketing Campaigns</h3></li>
+                        </ol>
+                       </div>
+ 
+                 </div>
+            
+                <div class="left">
+                    <img src="./assets/details-2-background.jpg" alt="">
+                </div>
+              
+                
+            </section>
+
+            <section id="testimonials">
+                <div class="section-heading">
+                    <h2>Read Our Customer Testimonials</h2>
+                    <p>Our clients are our partners and we can not imagine a better future for our company without helping them reach their objectives</p>
+                </div>
+                <div class="section-wrapper">
+                    <div class="testimonial">
+                        <img src="assets/testimonial-1.jpg" alt="">
+                        <p>The guys from Aria helped with getting my business off the ground and turning into a profitable company.</p>
+                        <h4>Jude Thorn - Founder</h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="assets/testimonial-2.jpg" alt="">
+                        <p>The guys from Aria helped with getting my business off the ground and turning into a profitable company.</p>
+                        <h4>Jude Thorn - Founder</h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="assets/testimonial-3.jpg" alt="">
+                        <p>The guys from Aria helped with getting my business off the ground and turning into a profitable company.</p>
+                        <h4>Jude Thorn - Founder</h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="assets/testimonial-4.jpg" alt="">
+                        <p>The guys from Aria helped with getting my business off the ground and turning into a profitable company.</p>
+                        <h4>Jude Thorn - Founder</h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="assets/testimonial-5.jpg" alt="">
+                        <p>The guys from Aria helped with getting my business off the ground and turning into a profitable company.</p>
+                        <h4>Jude Thorn - Founder</h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="assets/testimonial-6.jpg" alt="">
+                        <p>The guys from Aria helped with getting my business off the ground and turning into a profitable company.</p>
+                        <h4>Jude Thorn - Founder</h4>
+                    </div>
+                </div>
+            </section>
+           
+            <section id="callme">
+                  <div class="left_callme">
+                    <span id="title">Call Me</span>
+                    <h2>Have Us Contact You By Filling And Submitting The Form</h2>
+                    <p>You are just a few steps away from a personalized offer. Just fill in the form and send it to us and we'll get right back with a call to help you decide what service package works.</p>
+
+                    <ul>
+                        <li>
+                            <p>It's very easy just fill in the form so we can call</p>
+                        </li>
+                        <li>
+                            <p>During the call we'll require some info about the company</p>
+                        </li>
+                        <li>
+                            <p>Don't hesitate to email us for any questions or inquiries</p>
+                        </li>
+                    </ul>
+                  </div>
+                  <div class="right_callme">
+                    <form>
+                        <div class="form-group">
+                            <input type="text">
+                            <label>Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text">
+                            <label>Phone</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text">
+                            <label>Email</label>
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option>Instersted In</option>
+                                <option>Off the Ground</option>
+                                <option>Marked Domain</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <span id="callme-checkbox">
+                                I agree with Aria's stated
+                                <a href="#">Privacy Policy</a>
+                                and
+                                <a href="#">Terms &amp; Conditions</a>
+                            </span>
+                        </div>
+                        <button>CALL ME</button>
+                    </form>
+                  </div>
+            </section>
+
+            <section id="projects">
+               <div class="project_head">
+                <span id="title">PROJECTS</span>
+                <h2>Projects That We're Proud Of</h2>
+               </div>
+               <div class="project_menu">
+                <ul>
+                  <li><a href="" class="menu1">SHOW ALL</a></li>
+                  <li><a href="">DESIGN</a></li>
+                  <li><a href="">DEVELOPMENT</a></li>
+                  <li><a href="">MARKETING</a></li>
+                  <li><a href="">SEO</a></li>
+        
+                </ul>
+               </div>
+               <div class="project_img">
+
+                <div class="project">
+                    <img src="./assets/project-1.jpg" alt="">
+                    <p>Online Banking</p>
+                </div>
+                
+                <div class="project">
+                    <img src="./assets/project-2.jpg" alt="">
+                    <p>Classic Inndustry</p>
+                </div>
+                
+                <div class="project">
+                    <img src="./assets/project-3.jpg" alt="">
+                    <p>BoomBap Audio</p></div>
+                    <div class="project">
+                        <img src="./assets/project-4.jpg" alt="">
+                        <p>Van Moose</p>
+                    </div>
+                    
+                    <div class="project">
+                        <img src="./assets/project-5.jpg" alt="">
+                        <p>Joy Moments</p>
+                    </div>
+                    
+                    <div class="project">
+                        <img src="./assets/project-6.jpg" alt="">
+                        <p>Spark Events</p>
+                    </div>
+                    
+                    <div class="project">
+                        <img src="./assets/project-7.jpg" alt="">
+                        <p>Casual Wear</p>
+                    </div>
+                    
+                    <div class="project">
+                        <img src="./assets/project-8.jpg" alt="">
+                        <p>Zazoo Apps</p>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="right_about">
+                   <img src="./assets/about.jpg" alt="">
+                  </div>
+                <div class="left_about">
+                  <span id="title">ABOUT</span>
+                  <h2>We're Passionate About Delivering Growth Services</h2>
+                  <p>Our goal is to provide the right business growth services at the appropriate time so companies can benefit from the created momentum and thrive for a long period of time.</p>
+
+                  <ul>
+                      <li>
+                          <p>
+                            Everything we recommend has direct positive impact</p>
+                      </li>
+                      <li>
+                          <p>You will become an important partner of our company</p>
+                      </li>
+                  </ul>
+                </div>
+           
+          </section>
+
+
+            <section id="contact">
+                <div class="left">
+                    <div class="section-heading">
+                        <span id="title">Contact</span>
+                        <h2>Get In Touch Using The Form</h2>
+                    </div>
+                    <p class="coffee">You can stop by our office for a cup of coffee and just use the contact form below for any questions and inquiries</p>
+                    <div class="info">
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            22nd Innovative Street, San Francisco, CA 94043, US
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:911234567890"> +91 123 456 7890</a>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:911234567890"> +91 123 456 7890</a>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:office@domain.com"> office@domain.com</a>
+                        </p>
+                    </div>
+                    <div class="social">
+                        <h3>Follow Aria On Social Media</h3>
+                        <div class="icons">
+                            <a href="" style="background-color: aqua;">
+                                <span></span>
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="" style="background-color: aqua;">
+                                <span></span>
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="" style="background-color: aqua;">
+                                <span></span>
+                                <i class="fa-brands fa-pinterest"></i>
+                            </a>
+                            <a href="" style="background-color: aqua;">
+                                <span></span>
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="" style="background-color: aqua;">
+                                <span></span>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="" style="background-color: aqua;">
+                                <span></span>
+                                <i class="fa-brands fa-behance"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text">
+                            <label for="">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text">
+                            <label for="">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <label for="">Your Message</label>
+                        </div>
+                        <div class="form-group agree">
+                            <input type="checkbox" name="" id="">
+                            I agree with Aria's stated
+                            <a href="">Privacy Policy</a>
+                            and
+                            <a href="">Terms Conditions</a>
+                        </div>
+                        <button type="submit">Submit Message</button>
+                    </form>
+                </div>
+            </section>
+
+            <footer>
+                <div class="top">
+                    <div class="left">
+                        <h2>Few Words About Aria</h2>
+                        <p>We're passionate about delivering the best business growth services for companies just starting out as startups or industry players that have established their market position a long tima ago.</p>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <h2>Links</h2>
+                            <li>
+                                <a href="">Terms &amp; Conditions</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy Policy</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <h2>Tools</h2>
+                            <li>
+                                <a href="">Terms &amp; Conditions</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy Policy</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <h2>Partners</h2>
+                            <li>
+                                <a href="">Terms &amp; Conditions</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p>
+                        Copyright © 2024 All Rights Reserved 
+                    </p>
+                </div>
+            </footer>
+  </main>
+ </div>
+
+ </body>
+ <script>
+ document.addEventListener('contextmenu', function(event) {
+  event.preventDefault();
+});
+ </script>
+</html>
